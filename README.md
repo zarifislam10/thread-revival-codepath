@@ -20,8 +20,4 @@ Showcasing bold style, DIY spirit, and fashion for rebels & dreamers.
 Built as part of the **CodePath Web Dev 101** course to level up my HTML, CSS, and JavaScript skills.  
 *Where thrift meets style. Rebirth your wardrobe. 🔥*
 
----
-
-**Made by Zarif Islam**  
-🦇✨🌙
 
