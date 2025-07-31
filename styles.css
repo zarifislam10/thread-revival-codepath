@@ -1,388 +1,545 @@
 /* Add CSS styles for your web site here and use them in index.html. */
 
 html {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 body {
-  padding: 40px;
-  padding-bottom: 150px; /* for footer space */
-  margin: 0px;
+padding: 40px;
+padding-bottom: 150px; /* for footer space */
+margin: 0px;
 
-  background-color: var(--bg-color);
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+background-color: var(--bg-color);
+background-image: var(--bg-image);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
 
-  font-size: 16px;
-  color: var(--text-color);
-  font-family: Tahoma, sans-serif;
+font-size: 16px;
+color: var(--text-color);
+font-family: Tahoma, sans-serif;
 }
 
 @font-face {
-  font-family: 'GraffitiCity';
-  src: url('./fonts/GraffitiCity.otf') format('opentype');
+font-family: 'GraffitiCity';
+src: url('./fonts/GraffitiCity.otf') format('opentype');
 }
 
 #spray-text {
-  font-family: 'GraffitiCity', sans-serif;
-  font-size: 2rem;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-shadow: none;
-  text-align: center;
-  margin-top: -30px;
+font-family: 'GraffitiCity', sans-serif;
+font-size: 2rem;
+color: black;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+text-shadow: none;
+text-align: center;
+margin-top: -30px;
 }
 
 h1 {
-  font-family: 'Rubik Doodle Shadow', cursive;
-  color: #ff0055;
-  text-align: center;
-  font-size: 64px; /* ← Make it larger */
+font-family: 'Rubik Doodle Shadow', cursive;
+color: #ff0055;
+text-align: center;
+font-size: 64px; /* ← Make it larger */
 }
 
 h2 {
-    font-family: 'Rubik Doodle Shadow', cursive;
-    color: #ff00ff;
+  font-family: 'Rubik Doodle Shadow', cursive;
+  color: #ff00ff;
 }
 h1:hover {
-  color: #ff00ff;
-  text-shadow:
-    0 0 5px #ff00ff,
-    0 0 10px #f1b4e3,
-    0 0 20px #ff00ff,
-    0 0 30px #ff00ff;
-  transition: all 0.3s ease;
+color: #ff00ff;
+text-shadow:
+  0 0 5px #ff00ff,
+  0 0 10px #f1b4e3,
+  0 0 20px #ff00ff,
+  0 0 30px #ff00ff;
+transition: all 0.3s ease;
 }
 
 h3 {
-    font-family: "Rubik Mono One", monospace;
-    color: #ff2e78;  
-    opacity: 0.85; /* slightly faded */
-    text-shadow: 9px 9px 3px rgba(0, 0, 0, 0.3);
-    font-family: "Rubik Mono One", monospace;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Rubik Mono One", monospace;
+  color: #ff2e78;  
+  opacity: 0.85; /* slightly faded */
+  text-shadow: 9px 9px 3px rgba(0, 0, 0, 0.3);
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
 h4 {
-    color: #ff0055;
-    
+  color: #ff0055;
+  
 }
 
 p {
-    color: black;
-    font-family: 'Courier New', Courier, monospace; 
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #00000033, -1px -1px 0 #00000033;
-    opacity: 0.9;
-    filter: contrast(0.9) grayscale(0.2);
+  color: black;
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #00000033, -1px -1px 0 #00000033;
+  opacity: 0.9;
+  filter: contrast(0.9) grayscale(0.2);
 }
 
 
 ul {
-    list-style: none;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow: 1px 1px 0 #00000033, -1px -1px 0 #00000033;
+  list-style: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 1px 1px 0 #00000033, -1px -1px 0 #00000033;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  overflow: hidden;
-  z-index: 1000;
-  list-style-type: none;
+display: flex;
+align-items: center;
+background-color: #333;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+margin: 0;
+padding: 0 10px;
+z-index: 1000;
 }
+
 
 .navbar li {
-  list-style: none;
-  float: left;
+margin-right: 10px;
 }
 
+
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
 }
 
 .navbar li a:hover {
-  background-color: #111;
+background-color: #111;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+background-color: #111;
 }
 
 .heart-list li::before {
-  content: "";
-  display: inline-block;
-  background-image: url("img/heart-eye.png");
-  background-size: 34px 34px;
-  width: 35px;
-  height: 35px;
-  margin-right: 12px;
-  vertical-align: middle;
+content: "";
+display: inline-block;
+background-image: url("img/heart-eye.png");
+background-size: 34px 34px;
+width: 35px;
+height: 35px;
+margin-right: 12px;
+vertical-align: middle;
 }
 
 
 a,
 a * {
-      color: #ff2e78;  /* bright pink for grunge vibe */
-      text-decoration: none;
+    color: #ff2e78;  /* bright pink for grunge vibe */
+    text-decoration: none;
 
 }
 
 button {
-    background-color: rgb(116, 75, 166);    /* button color */
-    color: white;               /* text color */
-    border:  2px ridge black;               /* hides the default border */
-    padding: 10px 13px;          /* space between button's text and edge */
-    border-radius: 5px;         /* curved edges instead of square */
-    cursor: pointer;            /* makes the cursor change when over button */
-    font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(116, 75, 166);    /* button color */
+  color: white;               /* text color */
+  border:  2px ridge black;               /* hides the default border */
+  padding: 10px 13px;          /* space between button's text and edge */
+  border-radius: 5px;         /* curved edges instead of square */
+  cursor: pointer;            /* makes the cursor change when over button */
+  font-family: 'Courier New', Courier, monospace;
 }
 
 button:hover {
-  transform: translateY(-5px);
-  background-color: #28eb76; /* grungy lime green */
-  color: black;
-  box-shadow: 0 4px 10px rgb(49, 48, 48);
+transform: translateY(-5px);
+background-color: #28eb76; /* grungy lime green */
+color: black;
+box-shadow: 0 4px 10px rgb(49, 48, 48);
 
 }
 .button-group {
-  display: flex;
-  justify-content: center;
-  gap: 12px; /* space between buttons */
-  margin-top: 20px;
+display: flex;
+justify-content: center;
+gap: 12px; /* space between buttons */
+margin-top: 20px;
 }
 
 .button-group button {
-  display: inline-block;
-  margin: 0;
+display: inline-block;
+margin: 0;
 }
 
 a:link {
-  color: #cc0077;
-  font-family: 'Courier New', Courier, monospace;
-  text-decoration: None;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px #000000;
-  transition: all 0.3s ease;
+color: #cc0077;
+font-family: 'Courier New', Courier, monospace;
+text-decoration: None;
+font-weight: bold;
+letter-spacing: 1px;
+text-shadow: 1px 1px #000000;
+transition: all 0.3s ease;
 }
 
 a:visited {
-  color: purple
+color: purple
 }
 
 a:hover {
-  color: rgb(255, 204, 0);
-  text-decoration: None;
+color: rgb(255, 204, 0);
+text-decoration: None;
 }
 
 a:active {
-  color: yellow;
+color: yellow;
 }
 
 
 .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 20px; /* space between elements */
-  padding: 40px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 20px; /* space between elements */
+padding: 40px 20px;
 }
 
 .header-left {
-    width: 60%;
+  width: 60%;
 }
 
 .header-right {
-    width: 60%;
+  width: 60%;
 }
 
 .header-img {
-  display: block;
-  margin: 40px auto 20px auto; /* top, right, bottom, left */
-  width: 500px; /* increase as needed */
-  max-width: 100%;
+display: block;
+margin: 40px auto 20px auto; /* top, right, bottom, left */
+width: 500px; /* increase as needed */
+max-width: 100%;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--accent-color-darkest);
-  color: yellow;
-  text-align: center;
-  padding: 12px 0;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9rem;
-  z-index: 999;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: var(--accent-color-darkest);
+color: yellow;
+text-align: center;
+padding: 12px 0;
+font-family: 'Courier New', Courier, monospace;
+font-size: 0.9rem;
+z-index: 999;
 }
 
 .footer a {
-  color: yellow;
-  text-decoration: none;
-  margin: 0 10px;
+color: yellow;
+text-decoration: none;
+margin: 0 10px;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
 
 /*** About Section ***
-  
-  Purpose:
-  - Add style rules for your website's About section
 
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
+Purpose:
+- Add style rules for your website's About section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
 ***/
 
 
 /*** Schedule Section ***
-  
-  Purpose:
-  - Add style rules for your website's Schedule section
 
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
+Purpose:
+- Add style rules for your website's Schedule section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
 ***/
 
 
 
 :root {
-    /* Light Mode */
-    --bg-color: rgba(49, 48, 48, 0.509);
-    --text-color: #231942;
-    --bg-image: url('img/bg.png'); /* background image for light mode */
-    --text-color: #231942;
+  /* Light Mode */
+  --bg-color: rgba(49, 48, 48, 0.509);
+  --text-color: #231942;
+  --bg-image: url('img/bg.png'); /* background image for light mode */
+  --text-color: #231942;
 
-    /* Dark Mode */
-    --bg-color-dark-mode: #3e3377;
-    --text-color-dark-mode: #fff;
+  /* Dark Mode */
+  --bg-color-dark-mode: #3e3377;
+  --text-color-dark-mode: #fff;
 
-    /* Accent Colors */
-    --accent-color-light: #7971ce;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #28eb76;
+  /* Accent Colors */
+  --accent-color-light: #7971ce;
+  --accent-color-medium: #684fb5;
+  --accent-color-dark: #482f95;
+  --accent-color-darkest: #231942;
+  --accent-color-green: #28eb76;
 
-    /* Error Colors */
-    --error-color: #f8bbd0;
-    --error-color-border: #e63946;
+  /* Error Colors */
+  --error-color: #f8bbd0;
+  --error-color-border: #e63946;
 }
 
 
 .featured {
-  font-weight: bold;
-  color: rgb(165, 37, 212);
+font-weight: bold;
+color: rgb(165, 37, 212);
 }
 
 .sold-out {
-  text-decoration: line-through;
-  color: gray;
+text-decoration: line-through;
+color: gray;
 }
 
 #highlight {
-  color: darkcyan;
-  font-style: italic;
-  font-weight: bold;
+color: darkcyan;
+font-style: italic;
+font-weight: bold;
 }
 
 th {
-  color: white
+color: white
 }
 
 td {
-  color: white
+color: white
 }
 
 .dj-nana-img {
-  width: 250px; /* Match your Fill-a-Bag image width */
-  height: auto;
-  display: block;
-  margin: 20px 0;
+width: 250px; /* Match your Fill-a-Bag image width */
+height: auto;
+display: block;
+margin: 20px 0;
 }
 
 .tooth-gem-img {
-  width: 250px;
-  height: auto;
-  display: block;
-  margin: 20px 0;
+width: 250px;
+height: auto;
+display: block;
+margin: 20px 0;
 }
 
 section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+margin-top: 80px;
+margin-bottom: 80px;
 }
 
 .schedule-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 40px auto;
-  max-width: 1000px;
-  padding: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+margin: 40px auto;
+max-width: 1000px;
+padding: 20px;
 }
 
 .schedule-card {
-  background-color: white;
-  padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-  width: 280px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  color: black;
+background-color: white;
+padding: 20px;
+border: 2px solid #ddd;
+border-radius: 12px;
+box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+width: 280px;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+color: black;
 }
 
 /* Time style */
 .schedule-card h4 {
-  color: #ff2e78;
-  margin-bottom: 10px;
+color: #ff2e78;
+margin-bottom: 10px;
 }
 
 /* Hover effect */
 .schedule-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-  background-color: #ffeaf7;
+transform: scale(1.03);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+background-color: #ffeaf7;
 }
 
+/* Default dark mode style */
+.dark-mode {
+background-color: #121212;
+color: #f5f5f5;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a {
+color: #f5f5f5;
+}
+
+.dark-mode .schedule-card {
+background-color: #1e1e1e;
+border-color: #333;
+box-shadow: 2px 2px 12px rgba(255,255,255,0.1);
+}
+
+#theme-button {
+vertical-align: middle;
+font-family: 'Rubik Mono One', sans-serif;
+background-color: #5c4a9d;
+color: white;
+padding: 10px 18px;
+border: none;
+border-radius: 8px;
+font-size: 12px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+#theme-button:hover {
+background-color: #7e65d6;
+transform: scale(1.05);
+}
+
+.rsvp-container {
+display: flex;
+flex-direction: row;
+gap: 20px;
+width: 100%;
+padding-bottom: 50px;
+}
+
+.rsvp-para {
+width: 55%;
+padding-right: 10px;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+.rsvp-participants {
+width: 45%;
+padding-right: 10px;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+.form-container {
+margin-top: 20px;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+margin-bottom: 10px;
+padding: 6px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+margin-bottom: 4px;
+}
+
+#rsvp {
+padding: 40px 20px;
+text-align: center;
+}
+
+.rsvp-main {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+gap: 50px;
+margin-top: 30px;
+}
+
+.rsvp-text {
+max-width: 400px;
+font-family: 'Rubik Mono One', sans-serif;
+text-align: left;
+line-height: 1.6;
+}
+
+.rsvp-participants p {
+margin: 8px 0;
+font-weight: bold;
+}
+
+.rsvp-form-wrapper {
+background-color: #f5f5f5;
+padding: 24px;
+border-radius: 16px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+width: 320px;
+}
+
+#rsvp-form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+#rsvp-form label {
+text-transform: uppercase;
+color: #3a1d63;
+font-size: 14px;
+}
+
+#rsvp-form input {
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+font-family: inherit;
+}
+
+#rsvp-button {
+margin-top: 12px;
+background-color: #5e42a6;
+color: white;
+border: none;
+padding: 12px;
+font-family: 'Rubik Mono One', sans-serif;
+font-size: 14px;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+
+#rsvp-button:hover {
+background-color: #4c3591;
+}
+
+.error {
+border-style: solid;
+border-width: 2px;
+border-color: red;
+background-color: #ffe6e6;
+}
